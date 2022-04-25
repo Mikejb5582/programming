@@ -1,10 +1,12 @@
 myList = ['item1', 'item2']
 myList.append('item3')
 myList[1] = 'new2'
-myList.pop()
-popped = myList.pop()
+myList.pop() *** removes last item
+popped = myList.pop() *** displays popped items
+
 myList = ['inception', ['i','am','a','a,'list']]
 myList[1][1]
+
 LIST = []
 TUPLE = []
 TUPLE list that cannot be changed
@@ -14,6 +16,8 @@ f"Hello, my name is {'what'}"
 a = "he Holy Grail"
 b = "quest"
 "My {} is to search for {}".format(b,a)
+
+
 giant_Pi = 3.14159265359
 '{:.2f}'.format(giant_Pi)
 '3.14'
@@ -23,6 +27,7 @@ list(myStr)
 myStr.split() ***makes string a list
 myStr.split(' ')
 ' '.join(myStr)
+
 
 x = 'hello'
 x = list(x)
