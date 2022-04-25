@@ -36,3 +36,42 @@ str(x)
 "['y','e','l','l','o']"
 ''.join(x)
 'yello'
+
+syntax enable
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+set autoindent
+filetype indent on
+
+:2,8d *** deletes lines 2-8
+
+print(x,y)
+print(x,y,end='     ')
+print(x,y,sep='aw jeez')
+print(x+y)
+print(x+' '+y)
+
+name = input("What is your name?: ")
+
+# single line comment
+'''
+multiline comment
+'''
+
+if 1 == 1:
+      print("mogus")
+elif 1 == 0:
+      print("sus")
+      
+if FALSE:
+      print("mogus")
+elif FALSE:
+      print("sus")
+else:
+      print("imposters win")
+      
+x = yamom
+if TRUE:
+      print(x, "is dummy")
