@@ -28,6 +28,19 @@ myStr.split() ***makes string a list
 myStr.split(' ')
 ' '.join(myStr)
 
+>>> list(sentence)
+['g', 'o', 'o', 'd', ' ', 'f', 'o', 'r', ' ', 'a', 'l', 'l']
+>>> sent_list = list(sentence)
+>>> sent_list
+['g', 'o', 'o', 'd', ' ', 'f', 'o', 'r', ' ', 'a', 'l', 'l']
+
+>>> sent_list[0] = 'f'
+>>> sent_list
+['f', 'o', 'o', 'd', ' ', 'f', 'o', 'r', ' ', 'a', 'l', 'l']
+>>> '.' .join(sent_list)
+'f.o.o.d. .f.o.r. .a.l.l'
+
+
 
 x = 'hello'
 x = list(x)
