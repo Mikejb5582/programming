@@ -88,3 +88,30 @@ else:
 x = yamom
 if TRUE:
       print(x, "is dummy")
+      
+lst = email.split("@")
+email = '.'.join(lst)
+lst = email.split(".")
+
+x = input("enter: ")
+x = int(x)
+if x % 2 == 0 and x < 0:
+    print("Negative Even")
+elif x % 2 != 0 and x < 0:
+    print("Negative Odd")
+elif x == 0:
+    print("Zero")
+elif x % 2 == 0 and x > 0:
+    print("Positive Even")
+elif x % 2 != 0 and x > 0:
+    print("Positive Odd")
+    
+def domath(a, b, c):
+    var = (a + b) * c
+    return var
+
+num = input("type a number:")
+y = num.replace(" ","+")
+print(y)
+
+
