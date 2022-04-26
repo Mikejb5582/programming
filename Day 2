@@ -1,1 +1,114 @@
+FOR LOOP
+myList = ['first', 'second', 'and the third']
+for item in myList:
+    print(item)
+    
+first
+second
+and the third
 
+
+
+
+WHILE LOOP
+while True:
+    print("make it stop")
+make it stop
+make it stop
+make it stop
+              **** add break statement to stop infinite loop
+
+x = 0
+while x < 10:
+    print(x)
+    x =+ 1
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+
+
+RANGE
+type (range(0,10))
+<class 'range'>
+
+list(range(0,10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for x in range(0,10): **** lines 22-31
+
+for x in range(0,10,2):
+0
+2
+3
+6
+8
+
+for x in range(0,10,-1):
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+
+
+SPLICE
+myStr = "The sussy imposter faked medbay scan"
+print(myStr[0:10:2])   **** every other letter from 0-10
+Tessy
+
+print(myStr[-5::])
+nacs 
+
+print(myStr[:-1])
+The sussy imposter faked medbay sca
+
+print(myStr[::-1])
+nacs yabdem dekad retsopmi yssus ehT
+
+myList = ['this', 'is' , 1, 'list']
+results = [x for x in myList if x == 1]
+print(results)
+
+[1] *** lists twice if in list twice
+
+results = [x for x in range(0,50) if x%2 == 0]
+print(results)
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48]
+
+myList = [1, 2, 3, 4, 5, 6]
+results = [item for item in myList if item < 4]
+print(results)
+
+[1, 2, 3]
+
+
+
+
+Opening/Closing a File
+fp = open('myfile.txt)
+fp.close()
+
+with open('myfile.txt') as fp:
+    pass *** means do nothing, keeps interpreter from shitting itself
+    
+                         v ** opens in read mode, must be second option (read mode default) w for write   
+with open('myfile.txt', 'r') as fp:
+    print(fp.read(5))     *** reads the first 5 bytes (letters) **reads as one big string 
+                         v *** only prints second line
+    print(fp.readlines()[1]) *** reads each line and makes them elements inside of a list  **************************************************************
