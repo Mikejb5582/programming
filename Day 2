@@ -133,4 +133,66 @@ with open (myFile, 'w') as fp0:
             fp1.write(lines) 
 
 ************************************************* READ AND WRITE USE STRINGS, READ/WRITELINES USE LISTS *************************************************
+
+
+                                                                     Runestone
+find number of characters in .txt
+
+with open('travel_plans.txt', 'r') as fp:
+    num = int(len(fp.read()))
             
+
+find number of characters .txt
+
+with open('emotion_words.txt', 'r') as fp:
+    words = (fp.read())
+    num_words = len(words.split())
+    
+make num_line the number of lines in .txt
+
+with open('school_prompt.txt') as fp:
+    lines = fp.readlines()
+    num_lines = len(lines)
+    
+first 30 characters of .txt to var
+
+with open('school_prompt.txt') as fp:
+    beginning_chars = fp.read(30)
+
+list third word of every line 
+
+with open('school_prompt.txt') as fp:
+    three = [line.split()[2] for line in fp]
+    
+list all words containing 'p'
+
+p_words = []
+
+with open('school_prompt.txt') as fp:
+    lines = fp.read()
+    words = lines.split()
+    for i in words:
+        if 'p' in i:
+            p_words.append(i)
+            
+            
+ord - finds decimal representation of binary value of ascii character
+ord('a')
+97
+ord('A')
+65
+chr - reverse ord
+chr(42)
+'*'
+ 
+ format(ord('*'), "0>8b') *****0>8b, even though the first two digits are zero, still displays 8 bits
+'00101010'
+
+  x = format(ord('*'), '0>8b')
+  x
+'00101010'
+  int(x, 2)
+42
+  ochr(int(x, 2))
+'*'
+
