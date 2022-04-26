@@ -195,4 +195,10 @@ chr(42)
 42
   ochr(int(x, 2))
 '*'
-
+****09
+  1 plswork = []
+  2 x = input()
+  3 while x != '':
+  4     plswork.append(x)
+  5     x = input()
+  6 print(plswork) 
