@@ -7,6 +7,9 @@ set number
 filetype indent on
 set autoindent
 
+set cursorline
+set showmode
+
 myList = ['item1', 'item2']
 myList.append('item3')
 myList[1] = 'new2'
