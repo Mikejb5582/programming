@@ -112,3 +112,25 @@ with open('myfile.txt', 'r') as fp:
     print(fp.read(5))     *** reads the first 5 bytes (letters) **reads as one big string 
                          v *** only prints second line
     print(fp.readlines()[1]) *** reads each line and makes them elements inside of a list  **************************************************************
+
+with open('travel_plans.txt', 'r') as fp:
+    num = int(len(fp.read()))   ********************************* Counts the characters in a file and saves to a integer
+
+
+WRITE
+myFile = 'myfile.txt'
+with open (myFile, 'w') as fp:
+        fp.write('Does this append or destroy') ****** overwrites, not appened **************************************************************************
+        
+myFile = 'myfile.txt'
+with open (myFile, 'w') as fp:
+        fp.writelines(['line1\n', 'line2\n')] ******** overwrites aswell, must manually add new lines
+        
+myFile = 'myfile.txt'
+with open (myFile, 'w') as fp0:
+        with open('newfile.txt', 'w') as fp1:
+            lines = fp0.read()
+            fp1.write(lines) 
+
+************************************************* READ AND WRITE USE STRINGS, READ/WRITELINES USE LISTS *************************************************
+            
