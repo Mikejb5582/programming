@@ -1,0 +1,74 @@
+SETS
+  *** unorganized, cannot pull items out using index, no duplicate items
+  >>>myset = {1, 2, 3, 3, 3, 5, 6}
+  >>>myset
+  {1, 2, 3, 5, 6}
+  >>>myset.add(100)
+  {1, 2, 3, 100, 5, 6}
+  >>> 3 in myset
+  True
+  myset.union(myotherset) *** does not overwrite, creates new set
+  myset.difference(otherset) *** in left, not right /// myset.intersection(otherset)
+  
+  
+DICTIONARIES
+  >>>mydict = {'Pvt':;'E-1', 'PFC'='E-2', 'LCpl':'E-3', 'Cpl':'E-4'}
+  >>>mydict['PFC']
+  'E-2'
+  >>> mydict['SPC'] = 'E-4' *** Cpl/SPC share 'E-4' key
+  >>>mydict['Pvt'] = 'E-0' *** overwrites 'E-1' key
+  >>> del mydict['SPC']
+  
+  >>>mystr = 'hello world'
+  >>>mydict = {}
+  >>>for i in mystr:
+  ...   if i in mydict:
+  ...           mydict[i] += 1
+  ...   else:
+  ...           mydict[i] = 1
+  
+  >>>mydict
+  {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1,}
+
+
+FUNCTIONS
+1 def fun(a, b):    ***defines fun, a and b arguemnts of function
+2     print(a + b)
+3
+4 fun(4, 7)
+
+11
+
+
+1 def fun(a, b):
+2     return a + b
+3
+4 fun(4, 7)
+
+
+1 def fun(*args):   *** variable amount of arguemnts, stored as tuple
+2     print(args)
+3     
+4     return sum(args)
+5
+6 print(fun(4, 7, ))
+
+20
+
+
+1 def fun(**kwargs):   ***key word args
+2     print(kwargs)
+3
+4     print("I drive a {} {} {}.".format(kwargs['year'], kwargs['make'], kwargs['model']))
+5
+6     fun(year='1982', make='DMC', model='DeLorean')
+
+1 #def fun(x):
+2 #    return x + 10
+3
+4 #print(fun(1))
+5                 **** ^ v same thing
+6 y = lambda x: x + 10
+7
+8 print(y(1))
+
