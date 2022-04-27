@@ -1,0 +1,47 @@
+Returns sum of positive numbers
+
+def positive_sum(arr):
+    arr = sum(x for x in arr if x > 0)
+    return arr
+    
+    
+    
+Returns list counting down from n
+
+def reverse_seq(n):
+    if n > 0:
+        return list(range(n,0,-1))
+        
+        
+        
+Returns True if number is divisible by both a  and b
+
+def is_divide_by(number, a, b):
+    if number % a == 0and number % b == 0:
+        return True
+    else:
+        return False
+        
+        
+        
+Returns "Even" or "Odd"
+
+def even_or_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+        
+        
+        
+Returns list of numbers ""n"" reverse
+
+def digitize(n):
+    return [int(x) for x in str(n)[::-1]]
+    
+    
+    
+Removes exclamation marks from string
+
+def remove_exclamation_marks(s):
+    return s.replace('!','')
