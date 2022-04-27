@@ -67,8 +67,21 @@ FUNCTIONS
 2 #    return x + 10
 3
 4 #print(fun(1))
-5                 **** ^ v same thing
+5              ^ v   **** ^ v same thing
 6 y = lambda x: x + 10
 7
 8 print(y(1))
 
+
+1 def incrementaor(n):
+2     return lambda x: x + n
+3
+4 y = incrementor(42)
+5
+6 print('First time: ' + str(y(5)))
+7 print('Second time: ' + str(y(5)))
+8 print('Third time: ' + str(y(5)))
+
+First time: 47
+Second time: 47
+Third time: 52
