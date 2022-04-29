@@ -1,1 +1,157 @@
+1 #r!/usr/bin/env python3                                                      
+  2 
+  3 def q1(sentence):
+  4     '''
+  5     Given a string of multiple words separated by single spaces,
+  6     return a new string with the sentence reversed. The words
+  7     themselves should remain as they are. For example, given
+  8     'it is accepted as a masterpiece on strategy', the returned
+  9     string should be 'strategy on masterpiece a as accepted is it'.
+ 10     '''
+ 11     return ' '.join(sentence.split()[::-1])
+ 12     
+ 13 
+ 14 def q2(n):
+ 15     '''
+ 16     Given a positive integer, return its string representation with
+ 17     commas seperating groups of 3 digits. For example, given 65535
+ 18     the returned string should be '65,535'.
+ 19     '''
+ 20     return "{:,}".format(n)
+ 21     
+ 22 
+ 23 def q3(lst0, lst1):
+ 24     '''
+ 25     Given two lists of integers, return a sorted list that contains
+ 26     all integers from both lists in descending order. For example,
+ 27     given [3,4,9] and [8,1,5] the returned list should be [9,8,5,4,3,1].
+ 28     The returned list may contain duplicates.
+ 29     '''
+ 30     
+ 31     lst2 = lst0 + lst1
+ 32     return sorted(lst2, reverse=True)
+ 33      
+ 34     
+ 35     
+ 36 
+ 37 def q4(s1,s2,s3):
+ 38     '''
+ 39     Given 3 scores in the range [0-100] inclusive, return 'GO' if
+ 40     the average score is greater than 50. Otherwise return 'NOGO'.
+ 41     '''
+ 42     grad = (s1 + s2 + s3)/3
+ 43     if grad > 50:
+ 44         return 'GO'
+ 45     else:
+ 46         return 'NOGO'
+ 47     
+ 48 
+ 49 def q5(integer, limit):
+ 50     '''
+ 51     Given an integer and limit, return a list of even multiples of the
+ 52     integer up to and including the limit. For example, if integer==3 and
+ 53     limit==30, the returned list should be [0,6,12,18,24,30]. Note, 0 is
+ 54     a multiple of any integer except 0 itself.
+ 55     '''
+ 56     nut = []
+ 57     pog = list(range(0,limit+1,integer))
+58     for i in pog:
+ 59         if i % 2 == 0:
+ 60            nut.append(i)
+ 61     return nut
+ 62     
+ 63 
+ 64 def q6(f0, f1):
+ 65     '''
+ 66     Given two filenames, return a list whose elements consist of line numbers
+ 67     for which the two files differ. The first line is considered line 0.
+ 68     '''
+ 69     mylist = []
+ 70     with open(f0) as fp0:
+ 71         with open(f1) as fp1:
+ 72             lines0 = fp0.readlines()
+ 73             lines1 = fp1.readlines()
+ 74     for c,i in enumerate(lines0):
+ 75         if i != lines1[c]:
+ 76             mylist.append(c)
+ 77 
+ 78     return mylist
+ 79 
+ 80     '''
+ 81     c = 0
+ 82     for  in lines0:
+ 83         if i != lines1[c]:
+ 84             mylist.append(c)
+ 85         c += 1
+ 86     '''
+ 87     '''
+ 88     c = 0
+ 89     for l0,l1 in zip(lines0,lines1):
+ 90         if l0 != l1:
+ 91             mylist.append(c)
+ 92         c += 1
+ 93     '''
+ 94 
+ 95 
+ 96 def q7(lst):
+ 97     '''
+ 98     Return the first duplicate value in the given list.
+ 99     For example, if given [5,7,9,1,3,7,9,5], the returned value should
+100     be 7.
+101     '''
+102     holds = []
+103     for i in lst:
+104         holds.append(i)
+105         if i in holds:
+106             return i
+107 
+108 
+109 
+110 
+111 def q8(strng):
+112     '''
+113     Given a sentence as a string with words being separated by a single space    ,
+114     return the length of the shortest word.
+115     '''
+116     return len(min(strng.split(), key=len))
+117     '''
+118     words = strng.split()
+119     minlen = len(words[0])
+120     for i in words:
+121         if len(i) < minlen:
+122             minlen = len(i)
+123     return minlen
+124         
+125     '''
+126 
+127 def q9(strng):
+128     '''
+129     Given an alphanumeric string, return the character whose ascii value
+130     is that of the integer represenation of all of the digits in the string
+131     concatenated in the order in which they appear. For example, given
+132     'hell9oworld7', the returned character should be 'a' which has
+133     the ascii value of 97.
+134     '''
+135     return chr(int(''.join([i for i in strng if i.isnumeric()])))
+136     pass
+137 
+138     '''
+139     chars = []
+140     for i in string:
+141         if i.isnumeric():
+142             chars.append(i)
+143     return chr(int(''.join(chars)))
+144     '''
+145 
+146 
+147 def q10(arr):
+148     '''
+149     Given a list of positive integers sorted in ascending order, return
+150     the first non-consecutive value. If all values are consecutive, return
+151     None. For example, given [1,2,3,4,6,7], the returned value should be 6. 
+152     '''
+153     for c,i in enumerate(arr):
+154         if arr[c+1] != i+1:
+155             return arr[c+1]
+                                             49,23         44%
 
