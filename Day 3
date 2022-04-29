@@ -85,3 +85,65 @@ FUNCTIONS
 First time: 47
 Second time: 47
 Third time: 52
+
+
+SORTED *** non destructive
+SORT *** destructive
+
+sorted(mylist) ** sorts list alphabetically
+
+list(reversed(mylist)) *** reversed alphabetically
+sorted(mylist, key=len, reverse=True) ****reversed by length
+
+min/max(mylist, key=len) *** returns shortest/longest strings
+
+mylist ['this', 'my', 'list', 'is']
+list(enumerate(mylist))
+[(0, 'this' , (1,'my'), (2, 'list'), (3, 'is')]
+
+
+
+c = 0
+for i in myList:
+    print(i, mynewlist[c])
+    c+= 1
+    
+this one
+mymore
+list time
+is wegonnacelebrate
+
+
+for c,i in enuumerate(mylist):
+    print('item:', i, mynewlist[c], 'value of c:', c)
+    
+item: this one value of c: 0
+item: my more value of c: 1
+item: list time value of c: 2
+item: is wegonnacelebrate value of c: 3
+
+enumerate(mylist)
+list(enumerate(mylist))
+[(0, 'this'), (1, 'my'), (2, 'list'), (3, 'is')]
+
+
+
+mylist ['1', '3', '5', '7', '9']
+>>>map(int, mylist)
+>>>list(map(int, mylist))
+[1, 3, 5, 7, 9]
+>>> list(map(float, mylist))
+[1.0, 3.0, 5.0, 7.0, 9.0]
+
+
+
+
+>>>myints = []
+>>>for i in mylist:
+    myints.append(int(i))
+    
+>>>myints
+[1, 3, 5, 7, 9]
+>>>
+mylist
+['1', '3', '5', '7', '9']
