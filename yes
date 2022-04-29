@@ -1,1 +1,57 @@
+def q2(*args):
+
+Given the variable length argument list, return the average
+ 21     of all the arguments as a float
+ 22     '''
+ 23     avg = float(sum(args))/len(args)
+ 24     return avg
+
+
+
+
+ def q3(lst,n):
+
+Given a list (lst) and a number of items (n), return a new 
+ 30     list containing the last n entries in lst.
+ 31     '''
+ 32     return lst[-n:]  
+ 
+ 
+ 
+ def q10(numlist):
+
+121     Given the argument numlist as a list of numbers, return True if all 
+122     numbers in the list are NOT negative. If any numbers in the list are
+123     negative, return False.
+124     '''
+125     if all(x > -1 for x in numlist):                                                      
+126         return True
+127     else:
+128         return False
+
+
+
+
+
+
+
+
+def q7(filename):
+ 85     '''
+
+ 87     Given a filename, open the file and return the length of the first line 
+ 88     in the file excluding the line trminator.
+ 89     '''
+ 90     with open(filename) as fp:
+ 91         line1 = fp.read()
+ 92         line2 = line1.split('\n',1)[0]
+ 93         return len(line2)
+
+
+
+
+
+
+
+
 
