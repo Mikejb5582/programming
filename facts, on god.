@@ -1,0 +1,141 @@
+LISTS
+
+
+    myList = ['item1', 'item2']
+    myList.append('item3')
+    myList[1] = 'new2'
+    myList.pop() *** removes last item
+    popped = myList.pop() *** displays popped items
+
+
+    LIST = []
+    TUPLE = ()
+    TUPLE list that cannot be changed
+    list(myTup)
+    "Today is {}, {} {} {}'.format('Monday,'April,'25','2022')
+    f"Hello, my name is {'what'}"
+    a = "he Holy Grail"
+    b = "quest"
+    "My {} is to search for {}".format(b,a)
+
+
+    giant_Pi = 3.14159265359
+    '{:.2f}'.format(giant_Pi)
+    '3.14'
+    float_pi = float ('{:.2f}'.format(giant_Pi))
+    3.14
+    list(myStr)
+    myStr.split() ***makes string a list
+    myStr.split(' ')
+    ' '.join(myStr)
+
+
+    >>> list(sentence)
+    ['g', 'o', 'o', 'd', ' ', 'f', 'o', 'r', ' ', 'a', 'l', 'l']
+    >>> sent_list = list(sentence)
+    >>> sent_list
+    ['g', 'o', 'o', 'd', ' ', 'f', 'o', 'r', ' ', 'a', 'l', 'l']
+
+    >>> sent_list[0] = 'f'
+    >>> sent_list
+    ['f', 'o', 'o', 'd', ' ', 'f', 'o', 'r', ' ', 'a', 'l', 'l']
+    >>> '.' .join(sent_list)
+    'f.o.o.d. .f.o.r. .a.l.l'
+    
+
+        x = 'hello'
+    x = list(x)
+    x[0] = 'y'
+    str(x)
+    "['y','e','l','l','o']"
+    ''.join(x)
+    'yello'
+
+
+
+STRINGS
+    
+    
+    
+    print(x,y)
+    print(x,y,end='     ')
+    print(x,y,sep='aw jeez')
+    print(x+y)
+    print(x+' '+y)
+    
+    
+    
+    
+    
+MATH
+
+
+        x = input("enter: ")
+    x = int(x)
+    if x % 2 == 0 and x < 0:
+        print("Negative Even")
+    elif x % 2 != 0 and x < 0:
+        print("Negative Odd")
+    elif x == 0:
+        print("Zero")
+    elif x % 2 == 0 and x > 0:
+        print("Positive Even")
+    elif x % 2 != 0 and x > 0:
+        print("Positive Odd")
+        
+        
+        
+        
+FOR LOOPS 
+
+
+    FOR LOOP
+    myList = ['first', 'second', 'and the third']
+    for item in myList:
+        print(item)
+
+    first
+    second
+    and the third
+    
+    
+    
+WHILE LOOP
+    while True:
+        print("make it stop")
+    make it stop
+    make it stop
+    make it stop
+                  **** add break statement to stop infinite loop
+                  
+                  
+                  
+                  
+RANGE
+    type (range(0,10))
+    <class 'range'>
+
+    list(range(0,10))
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    for x in range(0,10): **** lines 22-31
+
+    for x in range(0,10,2):
+    0
+    2
+    3
+    6
+    8
+
+    for x in range(0,10,-1):
+    10
+    9
+    8
+    7
+    6
+    5
+    4
+    3
+    2
+    1
+
