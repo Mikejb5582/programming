@@ -45,3 +45,42 @@ Removes exclamation marks from string
 
 def remove_exclamation_marks(s):
     return s.replace('!','')
+
+
+
+Returns average of a given list
+
+def find_average(numbers):
+    summa = 0
+    for i in numbers:
+        summa = summa + i
+        
+    avg = summa / len(numbers)
+    return avg
+    
+    
+    
+sum of a range a, b
+def get_sum(a,b):
+    return sum(range(min(a, b), max(a, b) + 1))
+    
+    
+    
+    
+Return middle chracter(s) in a string
+
+def get_middle(s):
+    if len(s)%2==0:
+        i = int(len(s)/2)-1
+        return s[i]+s[i+1]
+    else:
+        return s[int(len(s)/2)]
+        
+        
+        
+Replace vowels in a string        
+
+def disemvowel(s):
+    for i in "aeiouAEIOU":
+        s = s.replace(i,'')
+    return s
