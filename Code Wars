@@ -92,3 +92,69 @@ def make_negative( number ):
     if number > 0:
         return (number - (number * 2))
     return number
+    
+    
+    
+Return a new list with the strings filtered out
+
+def filter_list(l):
+  return [x for x in l if type(x) is not str]
+  
+  
+  
+Return century given the year
+  
+def century(year):
+    return (year + 99) // 100
+    
+    
+    
+    
+rock, paper, scissors
+
+def rps(p1, p2):
+    beats = {'rock': 'scissors', 'scissors': 'paper', 'paper': 'rock'}
+    if beats[p1] == p2:
+        return "Player 1 won!"
+    if beats[p2] == p1:
+        return "Player 2 won!"
+    return "Draw!"
+    
+    
+    
+Return an integer with its digits in descending order 
+
+def descending_order(num):
+    num = str(num)
+    ordered = ''.join(sorted(num, reverse=True))
+    return int(ordered)
+    
+    
+    
+    
+    
+Remove smallest value from list without changing the order
+
+def remove_smallest(numbers):
+    a = numbers[:]
+    if a:
+        a.remove(min(a))
+    return a
+    
+    
+    
+
+def accum(s):
+    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
+    
+ahfhw
+Aa Hhh Ffff Hhhhh Wwwwww
+
+
+Return sum of two lowest numbers
+
+def sum_two_smallest_numbers(numbers):
+    return sum(sorted(numbers)[:2])
+    
+    
+    
