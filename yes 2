@@ -153,5 +153,10 @@
 153     for c,i in enumerate(arr):
 154         if arr[c+1] != i+1:
 155             return arr[c+1]
-                                             49,23         44%
 
+
+def first_non_consecutive(arr):
+    if not arr: return 0
+    for i, x in enumerate(arr[:-1]):
+        if x + 1 != arr[i + 1]:
+            return arr[i + 1]
