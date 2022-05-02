@@ -84,3 +84,11 @@ def disemvowel(s):
     for i in "aeiouAEIOU":
         s = s.replace(i,'')
     return s
+
+
+Return all numbers as negative
+
+def make_negative( number ):
+    if number > 0:
+        return (number - (number * 2))
+    return number
