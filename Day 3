@@ -114,8 +114,15 @@ list time
 is wegonnacelebrate
 
 
-for c,i in enuumerate(mylist):
+for c,i in enuumerate(mylist):                ************* Creates a list of tuples
     print('item:', i, mynewlist[c], 'value of c:', c)
+    list0 = ['one', 'more', 'time']
+    list(enumerate(list0))
+    [(0, 'one'), (1, 'more'), (2, 'time')]
+    
+    for c,i in enumerate(list0):
+        list1[c] = 1
+        **** overwrites list1 with list0 contents, ID remains the same
     
 item: this one value of c: 0
 item: my more value of c: 1
