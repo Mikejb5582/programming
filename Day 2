@@ -37,7 +37,7 @@ while x < 10:
 
 
 RANGE
-type (range(0,10))
+type (range(0,10)) //// range(10)
 <class 'range'>
 
 list(range(0,10))
